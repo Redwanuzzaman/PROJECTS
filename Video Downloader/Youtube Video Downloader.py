@@ -5,6 +5,8 @@ import youtube_dl
 links = ["link_1, link_2, link_N"]
 
 # you can also put additional features.
+# You can ignore them if you just want to download the video anyways.
+
 # 1. 'format':'bestvideo+bestaudio' Dowloads the video in the best available video and audio format.
 # 2. 'writethumbnail':'writethumbnail' Downloads the thumbnail image of the video.
 # 3. 'writesubtitles':'writesubtitles' Downloads the subtitles, if any.
