@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+    <div class="card">
+        <div class="calc-head">
+            <input type="text" id="result" maxlength="12">
+        </div>
+
+        <div class="calc-body">
+
+            <div>
+                <input type="button" value="C" class="btn" onclick="clearScreen()">
+                <input type="button" value="+/-" class="btn">
+                <input type="button" value="%" class="btn" onclick="insertSymbol('%')">
+                <input type="button" value="/" class="btn side-btn" onclick="insertSymbol('/')">
+            </div>
+
+            
+            <div>
+                <input type="button" value="7" class="btn" onclick="insertSymbol(7)">
+                <input type="button" value="8" class="btn" onclick="insertSymbol(8)">
+                <input type="button" value="9" class="btn" onclick="insertSymbol(9)">
+                <input type="button" value="X" class="btn side-btn" onclick="insertSymbol('*')">
+            </div>
+
+            
+            <div>
+                <input type="button" value="4" class="btn" onclick="insertSymbol(4)">
+                <input type="button" value="5" class="btn" onclick="insertSymbol(5)">
+                <input type="button" value="6" class="btn" onclick="insertSymbol(6)">
+                <input type="button" value="-" class="btn side-btn" onclick="insertSymbol('-')">
+            </div>  
+           
+
+            
+            <div>
+                <input type="button" value="1" class="btn" onclick="insertSymbol(1)">
+                <input type="button" value="2" class="btn" onclick="insertSymbol(2)">
+                <input type="button" value="3" class="btn" onclick="insertSymbol(3)">
+                <input type="button" value="+" class="btn side-btn" onclick="insertSymbol('+')">
+            </div>
+
+            <div>
+                <input type="button" value="0" class="btn" onclick="insertSymbol(0)">
+                <input type="button" value="." class="btn" onclick="insertSymbol('.')">
+                <input type="button" value="DEL" class="btn" onclick="deleteDigit()">
+                <input type="button" value="=" class="btn" style="background-color: orange;" onclick="answer()">
+            </div>
+
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
